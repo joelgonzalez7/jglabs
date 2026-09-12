@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>JG LABS</title>
+    <title>J-LABS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,129 +13,134 @@
 
     <div id="home-view">
 
-    <header>
-    <h1>JG LABS</h1>
-<p>Personal Digital Laboratory</p>
-    </header>
-    
-    <main>
-<section>
-    <h2>WELCOME TO MY PERSONAL LAB.</h2>
-    <p>Explore, create, experiment.</p>
-</section>
+        <header>
+            <h1>J-LABS</h1>
+            <p>personal guitar tools</p>
+        </header>
 
-<section>
+        <main>
+            <section>
+                <h2>my personal labs, archives and tools</h2>
+                <p>order is key.</p>
+            </section>
 
-    <h2>LABS</h2>
+            <section>
 
-    <div class="labs-grid">
-    
-<article class="lab-card" data-lab="guitar">
+                <h2>LABS</h2>
 
-    <h3>🎸 GUITAR LAB</h3>
+                <div class="labs-grid">
 
-    <p>Explore your guitar ideas.</p>
+                    <article class="lab-card" data-lab="guitar">
 
-    <div class="lab-action hidden">
-        <button class="enter-lab">ENTER LAB</button>
-        
+                        <h3>🎸 FINGERSTYLE LAB</h3>
+
+                        <p>fs library, tunings, tabs. secret techniques?</p>
+
+                        <div class="lab-action hidden">
+                            <button class="enter-lab">ENTER LAB</button>
+
+                        </div>
+
+                    </article>
+
+                    <article class="lab-card" data-lab="experiment">
+
+                        <h3>🧪 EXPERIMENT LAB</h3>
+
+                        <p>strange ideas (connected w/ idea-l and rain-l).</p>
+
+                        <div class="lab-action hidden">
+                            <button class="enter-lab">ENTER LAB</button>
+                        </div>
+
+                    </article>
+
+                    <article class="lab-card" data-lab="vault">
+
+                        <h3>💡 IDEA LAB</h3>
+
+                        <p>idea archive</p>
+
+                        <div class="lab-action hidden">
+                            <button class="enter-lab">ENTER LAB</button>
+                        </div>
+
+                    </article>
+
+                    <article class="lab-card" data-lab="inventor">
+
+                        <h3>🔧 GUITAR BOT ASSISTANT</h3>
+
+                        <p>for educational purposes only</p>
+
+                        <div class="lab-action hidden">
+                            <button class="enter-lab">ENTER LAB</button>
+                        </div>
+
+                    </article>
+
+                    <article class="lab-card" data-lab="audiorain">
+
+                        <h3>🌧️ AUDIO RAIN LAB</h3>
+
+                        <p>audio recordings and more.</p>
+
+                        <div class="lab-action hidden">
+                            <button class="enter-lab">ENTER LAB</button>
+                        </div>
+
+                    </article>
+
+                    <article class="lab-card" data-lab="liminal">
+
+                        <h3>🚪 ???????</h3>
+
+                        <p>nothing here. go away...</p>
+
+                        <div class="lab-action hidden">
+                            <button class="enter-lab">ENTER LAB</button>
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+        </main>
+
     </div>
 
-</article>
+    <div id="lab-view" class="hidden">
 
-<article class="lab-card" data-lab="code">
+        <button id="back-to-labs">← BACK TO LABS</button>
 
-    <h3>💻 CODE LAB</h3>
+        <main>
 
-    <p>Build, test and experiment with code.</p>
+            <section class="lab-header">
 
-    <div class="lab-action hidden">
-        <button class="enter-lab">ENTER LAB</button>
+                <h1 id="lab-view-title">LAB</h1>
+
+                <p id="lab-view-description">
+                    Welcome to the Lab.
+                </p>
+
+            </section>
+
+            <section id="lab-dynamic-content" class="lab-content">
+
+                <h2>SELECT A LAB</h2>
+
+                <p>Choose a laboratory to begin.</p>
+
+            </section>
+
+        </main>
+
     </div>
 
-</article>
-
-<article class="lab-card" data-lab="experiment">
-
-    <h3>🧪 EXPERIMENT LAB</h3>
-
-    <p>Test strange ideas and discover what happens.</p>
-
-    <div class="lab-action hidden">
-        <button class="enter-lab">ENTER LAB</button>
-    </div>
-
-</article>
-
-<article class="lab-card" data-lab="vault">
-
-    <h3>💡 IDEA VAULT</h3>
-
-    <p>Store ideas before they disappear.</p>
-
-    <div class="lab-action hidden">
-        <button class="enter-lab">ENTER LAB</button>
-    </div>
-
-</article>
-
-<article class="lab-card" data-lab="inventor">
-
-    <h3>🔧 MINI INVENTOR</h3>
-
-    <p>Build small tools for real problems.</p>
-
-    <div class="lab-action hidden">
-        <button class="enter-lab">ENTER LAB</button>
-    </div>
-
-</article>
-
-<article class="lab-card" data-lab="rain">
-
-    <h3>🌧️ AUDIO RAIN</h3>
-
-    <p>Capture and preserve your musical ideas.</p>
-
-    <div class="lab-action hidden">
-        <button class="enter-lab">ENTER LAB</button>
-    </div>
-
-</article>
-
-<article class="lab-card" data-lab="liminal">
-
-    <h3>🚪 LIMINAL CORNER</h3>
-
-    <p>Enter the strange side of the Lab.</p>
-
-    <div class="lab-action hidden">
-        <button class="enter-lab">ENTER LAB</button>
-    </div>
-
-</article>
-
-</div>
-
-
-   
-</main>
-
-</div>
-
-<div id="lab-view" class="hidden">
-
-    <h1 id="lab-view-title">LAB</h1>
-
-    <p id="lab-view-description">
-        Welcome to the Lab.
-    </p>
-
-    <button id="back-to-labs">← BACK TO LABS</button>
-
-</div>
-
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>

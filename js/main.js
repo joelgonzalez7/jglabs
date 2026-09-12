@@ -14,6 +14,9 @@ const labViewDescription = document.querySelector("#lab-view-description");
 
 const enterLabButtons = document.querySelectorAll(".enter-lab");
 
+const labDynamicContent =
+    document.querySelector("#lab-dynamic-content");
+
 let selectedLab = null;
 
 let selectedCard = null;
@@ -65,6 +68,8 @@ enterLabButtons.forEach(function (button) {
 
 function enterLab(lab) {
 
+    labDynamicContent.innerHTML = "";
+
     if (lab === "guitar") {
 
         labViewTitle.textContent = "🎸 GUITAR LAB";
@@ -92,8 +97,34 @@ function enterLab(lab) {
 
     } else if (lab === "audiorain") {
 
-        labViewTitle.textContent = "🌧️ AUDIO RAIN";
-        labViewDescription.textContent = "Capture and preserve your musical ideas.";
+    labViewTitle.textContent = "🌧️ AUDIO RAIN";
+    labViewDescription.textContent = "Capture and preserve your musical ideas.";
+
+    labDynamicContent.innerHTML = `
+        <h2>🌧️ AUDIO RAIN</h2>
+
+        <p>Drop your musical ideas here.</p>
+
+        <button id="new-recording">+ NEW RECORDING</button>
+
+        <div id="audio-drops">
+            <p>No audio drops yet.</p>
+        </div>
+    `;
+
+    const newRecordingButton =
+    document.querySelector("#new-recording");
+
+    newRecordingButton.addEventListener("click", async function () {
+
+    const stream = await navigator.mediaDevices.getUserMedia({
+        audio: true
+    });
+
+    console.log("Micrófono conectado");
+    console.log(stream);
+
+});
 
     } else if (lab === "liminal") {
 
